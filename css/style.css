@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 's';
+    src: url(imagens-fonts/Spongeboy\ Me\ Bob.ttf);
+}
+@font-face {
+    font-family: 'c';
+    src: url(imagens-fonts/Chonky\ Bunny.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffcc00;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.title {
+    font-family: 's';
+    font-size: 30px;
+    color: #0066cc;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.pages {
+    font-family: 's';
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.pages:hover {
+    background-color: #0066cc;
+    color: #ffcc00;
+    transform: translateY(-2px);
+}
+
+.tudo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    grid-template-rows: auto auto; /* 2 linhas */
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jogos {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.jogos:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.jogos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.jogos h4 {
+    font-family: 'c';
+    color: #0066cc;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.jogos p {
+    color: #666;
+    margin-bottom: 15px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.jogos button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 80%;
+    font-family: 'c';
+    font-size: 19px;
+}
+
+.jogos button:hover {
+    background-color: #e65c00;
+}
+
+footer {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-family: 'c';
+}
+
+footer p {
+    margin: 4px 0;
+}
+
